@@ -28,6 +28,6 @@ def save_words_to_database(database_path: str, words_list: list):
             else:
                 sql = "insert into words(word) values (' " + word + " ')"
             cur.execute(sql)
-        conn.close()
+
         print("Database save complete")
 
